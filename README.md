@@ -14,7 +14,7 @@
 
 **🚀 30-Minute Promise | 📱 PWA Enabled | 🎨 Beautiful Animations**
 
-[Live Demo](https://food-delivery-quickbite.vercel.app/) • [Report Bug](https://github.com/bhanukumardev/food-delivery-quickbite/issues) • [Request Feature](https://github.com/bhanukumardev/food-delivery-quickbite/issues)
+[Live Demo](https://quickbite-motion-delight.vercel.app/) • [Report Bug](https://github.com/bhanukumardev/food-delivery-quickbite/issues) • [Request Feature](https://github.com/bhanukumardev/food-delivery-quickbite/issues)
 
 </div>
 
@@ -37,156 +37,168 @@
 
 **QuickBite** is a modern, fully responsive food delivery web application that connects users with their favorite Indian restaurants across the country. With real-time order tracking, a 30-minute delivery promise, and stunning animations powered by Framer Motion, QuickBite delivers an exceptional user experience on both desktop and mobile devices.
 
-### ✨ Highlights
+### 🎪 Live Demo
 
-- • 🏃 **Lightning Fast**: Built with Vite for optimal performance
-- • 📱 **PWA Ready**: Install on any device for native-like experience
-- • 🎨 **Beautiful UI**: Crafted with Tailwind CSS and shadcn/ui components
-- • 🔄 **Real-time Tracking**: Monitor your order from restaurant to doorstep
-- • 🌙 **Dark Mode**: Seamless theme switching
-- • ♿ **Accessible**: WCAG compliant design
-- • 🇮🇳 **India-Focused**: Serving India's favorite meals since 2022
+Experience QuickBite at [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/)
+
+### ✨ What Makes QuickBite Special?
+
+- • 🚀 **Progressive Web App (PWA)** - Install on any device and use offline
+- • ⚡ **Lightning-fast Performance** - Built with Vite and optimized for speed
+- • 🎨 **Beautiful Animations** - Smooth, delightful interactions using Framer Motion
+- • 📱 **Fully Responsive** - Perfect experience from mobile to desktop
+- • 🍕 **5,000+ Partner Restaurants** - Supporting Indian cuisines across major cities
+- • 🕒 **30-Minute Guarantee** - Fast delivery promise with 98% on-time rate
+- • 🔒 **Type-safe Code** - Built with TypeScript for reliability
+- • 🎯 **Modern UI/UX** - Crafted with Tailwind CSS and shadcn/ui
+
+---
 
 ## 🚀 Features
 
 ### Core Features
 
-- • ✅ Browse 5,000+ Indian restaurants across major cities
-- • ✅ Real-time order tracking with live map
-- • ✅ 30-minute delivery guarantee
-- • ✅ Multiple payment options (UPI, Cards, Wallets)
-- • ✅ Customer reviews and ratings (4.8★ average)
-- • ✅ Special offers and discounts (Use DESI50 for 50% off)
-- • ✅ Partner restaurant dashboard
-- • ✅ Indian cuisines: North Indian, South Indian, Bengali, Street Food & more
+#### 🏠 Homepage
+- • Hero section with call-to-action
+- • Feature highlights with animated cards
+- • Popular restaurants showcase
+- • Special offers and promotions
+- • Interactive delivery promise section
+
+#### 🍽️ Restaurant Discovery
+- • Browse 5,000+ Indian partner restaurants
+- • Smart search and filtering
+- • Category-based navigation
+- • Restaurant ratings and reviews
+- • High-quality food photography
+
+#### 🛒 Order Management
+- • Intuitive cart system
+- • Real-time order tracking
+- • Multiple payment options
+- • Order history
+- • Favorite orders
+
+#### 📱 Progressive Web App (PWA)
+- • Install on any device (Mobile/Desktop)
+- • Offline functionality
+- • App-like experience
+- • Push notifications support
+- • Fast loading with service workers
 
 ### Technical Features
 
-- • ⚡ Lightning-fast performance with Vite
-- • 🎭 Smooth animations with Framer Motion
-- • 📊 State management with TanStack Query
-- • 🎨 Modern UI with shadcn/ui components
-- • 🔍 SEO optimized with meta tags
-- • 📱 Progressive Web App (PWA) support
-- • 🌐 Fully responsive design
-- • ♿ Accessibility compliant
+- • ⚡ **Vite**: Lightning-fast build tool and dev server
+- • ⚛️ **React 18**: Latest React features including concurrent rendering
+- • 📘 **TypeScript**: Full type safety throughout the application
+- • 🎨 **Tailwind CSS**: Utility-first styling with custom design system
+- • 🎭 **Framer Motion**: Smooth animations and transitions
+- • 🧩 **shadcn/ui**: High-quality, accessible components
+- • 📊 **Recharts**: Data visualization for analytics
+- • 📍 **React Router**: Client-side routing
+- • 🎯 **React Hook Form**: Efficient form handling
+- • ✅ **Zod**: Runtime type validation
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### Frontend Framework
+- • **React 18.3** - UI Library
+- • **TypeScript 5.8** - Type Safety
+- • **Vite 5.4** - Build Tool
 
-- • **Framework**: React 18.3
-- • **Language**: TypeScript 5.8
-- • **Build Tool**: Vite 5.4
-- • **Styling**: Tailwind CSS 3.4
-- • **UI Components**: shadcn/ui (Radix UI)
-- • **Animations**: Framer Motion 11.18
-- • **3D Graphics**: React Three Fiber
-- • **Routing**: React Router DOM 6.30
+### Styling
+- • **Tailwind CSS 3.4** - Utility-first CSS Framework
+- • **shadcn/ui** - Re-usable Components
+- • **Lucide React** - Beautiful Icons
 
-### State Management & Data
+### Animation & UX
+- • **Framer Motion** - Animation Library
+- • **React Intersection Observer** - Viewport Detection
 
-- • **Query Management**: TanStack Query 5.83
-- • **Form Handling**: React Hook Form 7.61
-- • **Validation**: Zod 3.25
+### Form & Validation
+- • **React Hook Form** - Form Management
+- • **Zod** - Schema Validation
+
+### Data Visualization
+- • **Recharts** - Chart Library
+
+### Routing
+- • **React Router DOM** - Client-side Routing
+
+### PWA Support
+- • **Vite PWA Plugin** - Progressive Web App Configuration
+- • **Workbox** - Service Worker Management
 
 ### Development Tools
+- • **ESLint** - Code Linting
+- • **PostCSS** - CSS Processing
+- • **Autoprefixer** - CSS Vendor Prefixing
 
-- • **Linting**: ESLint 9.32
-- • **Type Checking**: TypeScript
-- • **Package Manager**: npm
+---
 
-## 🚦 Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
 
-- • **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
-- • **npm** (v9 or higher) - Comes with Node.js
-- • **Git** - [Download](https://git-scm.com/)
+```bash
+node --version  # v18.0.0 or higher
+npm --version   # v9.0.0 or higher
+```
 
-### Quick Start
+### Installation
 
-```sh
-# Clone the repository
+1. **Clone the repository**
+
+```bash
 git clone https://github.com/bhanukumardev/food-delivery-quickbite.git
-
-# Navigate to project directory
 cd food-delivery-quickbite
+```
 
-# Install dependencies
+2. **Install dependencies**
+
+```bash
 npm install
+```
 
-# Start development server
+3. **Start the development server**
+
+```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+4. **Open your browser**
 
-## 📦 Installation
-
-### Detailed Installation Steps
-
-1. **Clone the Repository**
-
-   ```sh
-   git clone https://github.com/bhanukumardev/food-delivery-quickbite.git
-   cd food-delivery-quickbite
-   ```
-
-2. **Install Dependencies**
-
-   ```sh
-   npm install
-   ```
-
-3. **Environment Setup** (Optional)
-
-   ```sh
-   # Create .env file if needed
-   cp .env.example .env
-   ```
-
-4. **Start Development Server**
-
-   ```sh
-   npm run dev
-   ```
-
-### Alternative: Using pnpm or yarn
-
-```sh
-# Using pnpm
-pnpm install
-pnpm dev
-
-# Using yarn
-yarn install
-yarn dev
-```
-
-## 💻 Usage
+Navigate to `http://localhost:5173`
 
 ### Available Scripts
 
-```sh
-# Start development server (port 5173)
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
+
+---
+
+## 💻 Usage
+
+### Development
+
+1. **Start the dev server**
+```bash
 npm run dev
+```
 
-# Build for production
+2. **Make your changes** - Hot reload is enabled by default
+
+3. **Build for production**
+```bash
 npm run build
-
-# Build for development (with source maps)
-npm run build:dev
-
-# Preview production build
-npm run preview
-
-# Run linter
-npm run lint
 ```
 
 ### Project Structure
@@ -194,122 +206,134 @@ npm run lint
 ```
 food-delivery-quickbite/
 ├── public/              # Static assets
+│   ├── icons/          # PWA icons
+│   └── manifest.json   # PWA manifest
 ├── src/
-│   ├── assets/          # Images, icons, etc.
-│   ├── components/      # React components
-│   │   ├── ui/          # Reusable UI components
-│   │   ├── Hero.tsx
-│   │   ├── Header.tsx
-│   │   └── ...
-│   ├── hooks/           # Custom React hooks
-│   ├── lib/             # Utility functions
-│   ├── pages/           # Page components
-│   ├── App.tsx          # Main App component
-│   ├── main.tsx         # Entry point
-│   └── index.css        # Global styles
+│   ├── components/     # React components
+│   │   ├── ui/        # Reusable UI components
+│   │   └── ...        # Feature components
+│   ├── pages/         # Page components
+│   ├── lib/           # Utility functions
+│   ├── hooks/         # Custom React hooks
+│   ├── styles/        # Global styles
+│   ├── App.tsx        # Root component
+│   └── main.tsx       # Entry point
 ├── index.html
 ├── package.json
-├── tsconfig.json
-├── tailwind.config.ts
-└── vite.config.ts
+├── vite.config.ts     # Vite configuration
+├── tailwind.config.js # Tailwind configuration
+└── tsconfig.json      # TypeScript configuration
 ```
+
+---
 
 ## 📱 PWA Installation
 
-QuickBite can be installed as a Progressive Web App on any device:
-
 ### On Mobile (iOS/Android)
 
-1. Open [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/) in your browser
-2. Tap the browser menu (⋮ or share icon)
-3. Select "Add to Home Screen" or "Install App"
-4. Confirm installation
+1. Visit [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/) in your mobile browser
+2. Tap the **Share** button (iOS) or **Menu** (Android)
+3. Select **"Add to Home Screen"**
+4. Confirm the installation
+5. Launch QuickBite from your home screen
 
 ### On Desktop (Chrome/Edge)
 
-1. Visit [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/)
-2. Look for the install icon (⊕) in the address bar
-3. Click "Install" when prompted
-4. The app will open in its own window
+1. Visit [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/) in Chrome or Edge
+2. Look for the **Install** icon in the address bar
+3. Click **Install** when prompted
+4. QuickBite will open in its own window
+5. Access it from your applications or desktop
 
 ### PWA Features
 
-- • 📴 Offline functionality
-- • 🔔 Push notifications (coming soon)
-- • 🏠 Home screen icon
-- • 📲 Native app experience
-- • ⚡ Faster load times
+- • ⚡ **Offline Access** - Browse cached content without internet
+- • 📲 **Install on Device** - App-like experience on any platform
+- • 🔔 **Push Notifications** - Get updates on orders and offers
+- • 🚀 **Fast Loading** - Service workers cache assets for instant loading
+- • 💾 **Background Sync** - Sync data when connection is restored
+
+---
 
 ## 🌐 Deployment
 
 ### Deploy to Vercel (Recommended)
 
-1. **Using Vercel CLI**
+1. **Push to GitHub**
+```bash
+git add .
+git commit -m "Ready for deployment"
+git push origin main
+```
 
-   ```sh
-   # Install Vercel CLI
-   npm i -g vercel
+2. **Import to Vercel**
+- • Go to [vercel.com](https://vercel.com)
+- • Click **"New Project"**
+- • Import your GitHub repository
+- • Vercel will auto-detect Vite configuration
+- • Click **"Deploy"**
 
-   # Deploy
-   vercel
-   ```
+3. **Environment Variables** (if needed)
+```
+VITE_API_URL=your_api_url
+VITE_APP_NAME=QuickBite
+```
 
-2. **Using Vercel Dashboard**
+### Deploy to Netlify
 
-   - Visit [Vercel](https://vercel.com/)
-   - Import your GitHub repository
-   - Configure build settings:
-     - **Build Command**: `npm run build`
-     - **Output Directory**: `dist`
-     - **Install Command**: `npm install`
-   - Click "Deploy"
+1. **Build the project**
+```bash
+npm run build
+```
 
-3. **Current Deployment**
-
-   - Live URL: [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/)
-   - Auto-deploys on push to `main` branch
-
-### Deploy to Other Platforms
-
-<details>
-<summary>Netlify</summary>
-
-```sh
+2. **Deploy to Netlify**
+```bash
 # Install Netlify CLI
 npm install -g netlify-cli
 
-# Build the project
-npm run build
-
 # Deploy
-netlify deploy --prod --dir=dist
+netlify deploy --prod
 ```
-</details>
 
-<details>
-<summary>GitHub Pages</summary>
+### Current Deployment
 
-1. Add to `vite.config.ts`:
-   ```ts
-   base: '/food-delivery-quickbite/'
-   ```
-2. Build: `npm run build`
-3. Deploy the `dist` folder to `gh-pages` branch
-</details>
+- • **Live URL**: [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/)
+- • **Platform**: Vercel
+- • **Status**: ✅ Active
+- • **Automatic Deployments**: Enabled on push to `main`
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+### How to Contribute
 
 1. **Fork the Project**
-2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
+```bash
+gh repo fork bhanukumardev/food-delivery-quickbite
+```
+
+2. **Create your Feature Branch**
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. **Commit your Changes**
+```bash
+git commit -m 'Add some AmazingFeature'
+```
+
+4. **Push to the Branch**
+```bash
+git push origin feature/AmazingFeature
+```
+
 5. **Open a Pull Request**
 
-### Development Guidelines
+### Contribution Guidelines
 
-- • Follow TypeScript best practices
 - • Use conventional commit messages
 - • Write meaningful comments
 - • Test on multiple devices
