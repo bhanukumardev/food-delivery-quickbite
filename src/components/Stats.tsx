@@ -10,9 +10,9 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="py-16 md:py-20 bg-card">
+    <section className="py-8 md:py-12 bg-card">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -23,7 +23,7 @@ const Stats = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="text-center p-6 rounded-2xl bg-background shadow-card hover:shadow-glow transition-all cursor-pointer"
+                className="text-center p-4 md:p-6 rounded-2xl bg-background shadow-card hover:shadow-glow transition-all cursor-pointer"
               >
                 <motion.div
                   animate={{
@@ -34,11 +34,11 @@ const Stats = () => {
                     repeat: Infinity,
                     delay: index * 0.2,
                   }}
-                  className="inline-block mb-4"
+                  className="inline-block mb-3"
                 >
-                  <Icon className={`w-12 h-12 ${stat.color}`} />
+                  <Icon className={`w-10 h-10 md:w-12 md:h-12 ${stat.color}`} />
                 </motion.div>
-                <div className={`text-3xl md:text-4xl font-bold mb-2 ${stat.color}`}>
+                <div className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-2 ${stat.color}`}>
                   {stat.value}
                 </div>
                 <div className="text-sm md:text-base text-muted-foreground font-medium">

@@ -30,7 +30,7 @@ const features = [
 
 const DeliverySpeed = () => {
   return (
-    <section className="py-20 bg-muted/30 relative overflow-hidden">
+    <section className="py-12 md:py-16 bg-muted/30 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

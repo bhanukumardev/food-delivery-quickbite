@@ -6,8 +6,11 @@ import { VitePWA } from 'vite-plugin-pwa';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
-    port: 8080,
+    // Bind to IPv4 localhost explicitly for Windows compatibility
+    host: "127.0.0.1",
+    // Use 5173 (Vite default) to avoid conflicts with other local services like pgAdmin on 8080
+    port: 5173,
+    strictPort: true,
   },
   plugins: [
     react(),

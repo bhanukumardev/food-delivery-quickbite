@@ -122,7 +122,7 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:8080`
+The application will be available at `http://localhost:5173`
 
 ## 📦 Installation
 
@@ -171,7 +171,7 @@ yarn dev
 ### Available Scripts
 
 ```sh
-# Start development server (port 8080)
+# Start development server (port 5173)
 npm run dev
 
 # Build for production

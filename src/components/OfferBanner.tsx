@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Sparkles, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useApp } from "@/contexts/AppContext";
 
 const OfferBanner = () => {
+  const { handleClaimOffer } = useApp();
+
   return (
-    <section className="py-12 md:py-16 bg-gradient-to-r from-primary via-accent to-secondary relative overflow-hidden">
+    <section className="py-10 md:py-12 bg-gradient-to-r from-primary via-accent to-secondary relative overflow-hidden">
       {/* Animated background patterns */}
       <div className="absolute inset-0 opacity-10">
         {[...Array(20)].map((_, i) => (
@@ -67,6 +70,7 @@ const OfferBanner = () => {
             variant="outline"
             size="xl"
             className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all border-2 border-white font-bold shadow-2xl"
+            onClick={handleClaimOffer}
           >
             Claim Offer Now
           </Button>
