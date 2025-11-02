@@ -69,10 +69,10 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
   const handleClaimOffer = () => {
     toast.success("Offer Code Copied! 🎉", {
-      description: "Use code FIRST50 at checkout for 50% off",
+      description: "Use code DESI50 at checkout for 50% off",
       duration: 5000,
     });
-    navigator.clipboard.writeText("FIRST50");
+    navigator.clipboard.writeText("DESI50");
     handleOrderNow();
   };
 

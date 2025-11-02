@@ -8,12 +8,14 @@ import { useApp } from "@/contexts/AppContext";
 import { toast } from "sonner";
 
 const popularLocations = [
-  "Downtown",
-  "Business District",
-  "University Area",
-  "Suburban Plaza",
-  "Tech Park",
-  "Arts District",
+  "Connaught Place, Delhi",
+  "Koramangala, Bangalore",
+  "Bandra West, Mumbai",
+  "Salt Lake, Kolkata",
+  "Hitech City, Hyderabad",
+  "Anna Nagar, Chennai",
+  "Civil Lines, Jaipur",
+  "Gomti Nagar, Lucknow",
 ];
 
 const LocationModal = () => {

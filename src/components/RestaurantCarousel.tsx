@@ -5,46 +5,60 @@ import { useApp } from "@/contexts/AppContext";
 
 const restaurants = [
   {
-    name: "Bella Italia",
-    cuisine: "Italian",
+    name: "Zaika Dhaba",
+    cuisine: "North Indian",
     rating: 4.8,
     deliveryTime: "25-30 min",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&h=300&fit=crop",
   },
   {
-    name: "Sushi Master",
-    cuisine: "Japanese",
+    name: "Chaat Junction",
+    cuisine: "Street Food",
     rating: 4.9,
-    deliveryTime: "30-35 min",
-    image: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=300&fit=crop",
+    deliveryTime: "20-25 min",
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&h=300&fit=crop",
   },
   {
-    name: "Burger House",
-    cuisine: "American",
+    name: "Dilli Burger Hub",
+    cuisine: "Indian Burgers",
     rating: 4.7,
     deliveryTime: "20-25 min",
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=300&fit=crop",
   },
   {
-    name: "Taco Fiesta",
-    cuisine: "Mexican",
-    rating: 4.6,
+    name: "Biryani Bistro",
+    cuisine: "Hyderabadi Biryani",
+    rating: 4.8,
     deliveryTime: "25-30 min",
-    image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&h=300&fit=crop",
   },
   {
-    name: "Thai Spice",
-    cuisine: "Thai",
+    name: "Punjabi Tadka",
+    cuisine: "Punjabi",
     rating: 4.8,
     deliveryTime: "30-35 min",
-    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&h=300&fit=crop",
   },
   {
-    name: "Pizza Paradise",
-    cuisine: "Italian",
+    name: "Mumbai Masala Pizza",
+    cuisine: "Fusion Pizza",
     rating: 4.9,
     deliveryTime: "20-25 min",
     image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=300&fit=crop",
+  },
+  {
+    name: "South Spice",
+    cuisine: "South Indian",
+    rating: 4.9,
+    deliveryTime: "20-25 min",
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921?w=500&h=300&fit=crop",
+  },
+  {
+    name: "Bengali Treats",
+    cuisine: "Bengali Sweets",
+    rating: 4.7,
+    deliveryTime: "25-30 min",
+    image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&h=300&fit=crop",
   },
 ];
 
@@ -65,7 +79,7 @@ const RestaurantCarousel = () => {
             Featured <span className="text-primary font-extrabold">Restaurants</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover amazing local restaurants ready to deliver
+            Discover India's favorite restaurants ready to deliver to your doorstep
           </p>
         </motion.div>
 

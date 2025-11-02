@@ -24,7 +24,7 @@ const PartnerCTA = () => {
             Family
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Grow your business or earn on your schedule
+            Join India's largest food delivery network
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ const PartnerCTA = () => {
                 </h3>
 
                 <p className="text-muted-foreground mb-6">
-                  Reach thousands of hungry customers. Increase your revenue
+                  Reach lakhs of hungry customers across India. Increase your revenue
                   with QuickBite's powerful platform.
                 </p>
 
@@ -103,10 +103,10 @@ const PartnerCTA = () => {
                   <Bike className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4">Delivery Heroes</h3>
+                <h3 className="text-2xl font-bold mb-4">Be a QuickBite Rider</h3>
 
                 <p className="text-muted-foreground mb-6">
-                  Join our team of delivery heroes. Work flexible hours and earn
+                  Be a QuickBite Rider in your city. Work flexible hours and earn
                   competitive pay with perks.
                 </p>
 

@@ -19,35 +19,51 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     id: "1",
-    name: "Classic Burger",
-    description: "Juicy beef patty with fresh vegetables",
-    price: 12.99,
+    name: "Paneer Tikka Burger",
+    description: "Spicy paneer patty with mint chutney and veggies",
+    price: 149,
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop",
     rating: 4.8,
   },
   {
     id: "2",
-    name: "Margherita Pizza",
-    description: "Fresh mozzarella, tomato sauce, and basil",
-    price: 15.99,
+    name: "Mumbai Masala Pizza",
+    description: "Tandoori paneer, capsicum, onion with spicy sauce",
+    price: 299,
     image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=200&fit=crop",
     rating: 4.9,
   },
   {
     id: "3",
-    name: "Caesar Salad",
-    description: "Crispy romaine with parmesan and croutons",
-    price: 9.99,
-    image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=300&h=200&fit=crop",
-    rating: 4.6,
+    name: "Veg Biryani",
+    description: "Aromatic basmati rice with mixed vegetables and spices",
+    price: 199,
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=300&h=200&fit=crop",
+    rating: 4.7,
   },
   {
     id: "4",
-    name: "Pasta Carbonara",
-    description: "Creamy pasta with bacon and parmesan",
-    price: 13.99,
-    image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=300&h=200&fit=crop",
-    rating: 4.7,
+    name: "Butter Chicken",
+    description: "Creamy tomato curry with tender chicken pieces",
+    price: 279,
+    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=300&h=200&fit=crop",
+    rating: 4.9,
+  },
+  {
+    id: "5",
+    name: "Masala Dosa",
+    description: "Crispy rice crepe with spiced potato filling and chutney",
+    price: 129,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921?w=300&h=200&fit=crop",
+    rating: 4.8,
+  },
+  {
+    id: "6",
+    name: "Chole Bhature",
+    description: "Spicy chickpea curry with fluffy fried bread",
+    price: 159,
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=300&h=200&fit=crop",
+    rating: 4.6,
   },
 ];
 
@@ -96,7 +112,7 @@ const OrderModal = () => {
     }
 
     toast.success("Order Placed Successfully! 🎉", {
-      description: `${totalItems} items • $${getTotalPrice().toFixed(2)} • Delivering to ${userLocation}`,
+      description: `${totalItems} items • ₹${getTotalPrice().toFixed(2)} • Delivering to ${userLocation}`,
       duration: 5000,
     });
     setCart({});
@@ -153,7 +169,7 @@ const OrderModal = () => {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-primary">
-                      ${item.price.toFixed(2)}
+                      ₹{item.price.toFixed(2)}
                     </span>
                     {cart[item.id] ? (
                       <div className="flex items-center gap-2">
@@ -208,7 +224,7 @@ const OrderModal = () => {
                   </span>
                 </div>
                 <span className="text-2xl font-bold text-primary">
-                  ${getTotalPrice().toFixed(2)}
+                  ₹{getTotalPrice().toFixed(2)}
                 </span>
               </div>
               <Button

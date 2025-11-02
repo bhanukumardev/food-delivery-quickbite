@@ -63,7 +63,7 @@ const OfferBanner = () => {
           </p>
 
           <p className="text-base md:text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Use code <span className="font-bold bg-white text-primary px-3 py-1 rounded-lg">FIRST50</span> at checkout
+            Use code <span className="font-bold bg-white text-primary px-3 py-1 rounded-lg">DESI50</span> at checkout
           </p>
 
           <Button

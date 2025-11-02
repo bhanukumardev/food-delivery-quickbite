@@ -5,19 +5,19 @@ const steps = [
   {
     icon: Search,
     title: "Browse",
-    description: "Explore hundreds of local restaurants and cuisines near you",
+    description: "Explore thousands of Indian restaurants and cuisines near you",
     color: "from-primary to-accent",
   },
   {
     icon: ShoppingBag,
     title: "Order",
-    description: "Select your favorites and place your order in seconds",
+    description: "Select your favorites from biryani to dosa and place your order in seconds",
     color: "from-accent to-secondary",
   },
   {
     icon: MapPin,
     title: "Track",
-    description: "Watch your order arrive in real-time with live tracking",
+    description: "Watch your order arrive in real-time with live GPS tracking",
     color: "from-secondary to-primary",
   },
 ];

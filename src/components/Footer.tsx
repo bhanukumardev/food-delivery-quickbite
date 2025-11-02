@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
-    Company: ["About Us", "Careers", "Press", "Blog"],
+    Company: ["About Us", "Join Our Desi Delivery Team", "Press", "Indian Food Stories"],
     Support: ["Help Center", "Safety", "Contact Us", "FAQs"],
     Legal: ["Terms of Service", "Privacy Policy", "Cookie Policy", "Licensing"],
     Download: ["iOS App", "Android App"],
@@ -34,7 +34,7 @@ const Footer = () => {
               </h3>
             </motion.div>
             <p className="text-muted-foreground text-sm mb-6">
-              Delivering happiness, one meal at a time.
+              Serving India's favorite meals since 2022. Delivering happiness, one meal at a time.
             </p>
 
             {/* Social Links */}

@@ -8,7 +8,9 @@
 
 **GitHub Repository**: https://github.com/bhanukumardev/food-delivery-quickbite
 
-![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript) ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)
 
 **🚀 30-Minute Promise | 📱 PWA Enabled | 🎨 Beautiful Animations**
 
@@ -33,7 +35,7 @@
 
 ## 🎯 About
 
-**QuickBite** is a modern, fully responsive food delivery web application that connects users with their favorite local restaurants. With real-time order tracking, a 30-minute delivery promise, and stunning animations powered by Framer Motion, QuickBite delivers an exceptional user experience on both desktop and mobile devices.
+**QuickBite** is a modern, fully responsive food delivery web application that connects users with their favorite Indian restaurants across the country. With real-time order tracking, a 30-minute delivery promise, and stunning animations powered by Framer Motion, QuickBite delivers an exceptional user experience on both desktop and mobile devices.
 
 ### ✨ Highlights
 
@@ -43,18 +45,20 @@
 - • 🔄 **Real-time Tracking**: Monitor your order from restaurant to doorstep
 - • 🌙 **Dark Mode**: Seamless theme switching
 - • ♿ **Accessible**: WCAG compliant design
+- • 🇮🇳 **India-Focused**: Serving India's favorite meals since 2022
 
 ## 🚀 Features
 
 ### Core Features
 
-- • ✅ Browse 500+ local restaurants
+- • ✅ Browse 5,000+ Indian restaurants across major cities
 - • ✅ Real-time order tracking with live map
 - • ✅ 30-minute delivery guarantee
-- • ✅ Multiple payment options
+- • ✅ Multiple payment options (UPI, Cards, Wallets)
 - • ✅ Customer reviews and ratings (4.8★ average)
-- • ✅ Special offers and discounts
+- • ✅ Special offers and discounts (Use DESI50 for 50% off)
 - • ✅ Partner restaurant dashboard
+- • ✅ Indian cuisines: North Indian, South Indian, Bengali, Street Food & more
 
 ### Technical Features
 
@@ -66,6 +70,8 @@
 - • 📱 Progressive Web App (PWA) support
 - • 🌐 Fully responsive design
 - • ♿ Accessibility compliant
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -104,7 +110,7 @@ Before you begin, ensure you have the following installed:
 
 ### Quick Start
 
-```bash
+```sh
 # Clone the repository
 git clone https://github.com/bhanukumardev/food-delivery-quickbite.git
 
@@ -125,30 +131,34 @@ The application will be available at `http://localhost:5173`
 ### Detailed Installation Steps
 
 1. **Clone the Repository**
-   ```bash
+
+   ```sh
    git clone https://github.com/bhanukumardev/food-delivery-quickbite.git
    cd food-delivery-quickbite
    ```
 
 2. **Install Dependencies**
-   ```bash
+
+   ```sh
    npm install
    ```
 
 3. **Environment Setup** (Optional)
-   ```bash
+
+   ```sh
    # Create .env file if needed
    cp .env.example .env
    ```
 
 4. **Start Development Server**
-   ```bash
+
+   ```sh
    npm run dev
    ```
 
 ### Alternative: Using pnpm or yarn
 
-```bash
+```sh
 # Using pnpm
 pnpm install
 pnpm dev
@@ -162,7 +172,7 @@ yarn dev
 
 ### Available Scripts
 
-```bash
+```sh
 # Start development server (port 5173)
 npm run dev
 
@@ -183,20 +193,20 @@ npm run lint
 
 ```
 food-delivery-quickbite/
-├── public/                # Static assets
+├── public/              # Static assets
 ├── src/
-│   ├── assets/           # Images, icons, etc.
-│   ├── components/       # React components
-│   │   ├── ui/           # Reusable UI components
+│   ├── assets/          # Images, icons, etc.
+│   ├── components/      # React components
+│   │   ├── ui/          # Reusable UI components
 │   │   ├── Hero.tsx
 │   │   ├── Header.tsx
 │   │   └── ...
-│   ├── hooks/            # Custom React hooks
-│   ├── lib/              # Utility functions
-│   ├── pages/            # Page components
-│   ├── App.tsx           # Main App component
-│   ├── main.tsx          # Entry point
-│   └── index.css         # Global styles
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility functions
+│   ├── pages/           # Page components
+│   ├── App.tsx          # Main App component
+│   ├── main.tsx         # Entry point
+│   └── index.css        # Global styles
 ├── index.html
 ├── package.json
 ├── tsconfig.json
@@ -235,15 +245,17 @@ QuickBite can be installed as a Progressive Web App on any device:
 ### Deploy to Vercel (Recommended)
 
 1. **Using Vercel CLI**
-   ```bash
+
+   ```sh
    # Install Vercel CLI
    npm i -g vercel
-   
+
    # Deploy
    vercel
    ```
 
 2. **Using Vercel Dashboard**
+
    - Visit [Vercel](https://vercel.com/)
    - Import your GitHub repository
    - Configure build settings:
@@ -253,6 +265,7 @@ QuickBite can be installed as a Progressive Web App on any device:
    - Click "Deploy"
 
 3. **Current Deployment**
+
    - Live URL: [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/)
    - Auto-deploys on push to `main` branch
 
@@ -261,7 +274,7 @@ QuickBite can be installed as a Progressive Web App on any device:
 <details>
 <summary>Netlify</summary>
 
-```bash
+```sh
 # Install Netlify CLI
 npm install -g netlify-cli
 
@@ -306,6 +319,8 @@ Contributions are welcome! Here's how you can help:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## 👨‍💻 Author
 
 **Bhanu Kumar**
@@ -324,10 +339,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-- • **500+** Partner Restaurants
-- • **50k+** Happy Users
+- • **5,000+** Indian Partner Restaurants
+- • **2 Lakh+** Satisfied Customers
 - • **4.8★** Average Rating
 - • **98%** On-time Delivery Rate
+- • **Serving** Major cities across India
 
 ---
 
