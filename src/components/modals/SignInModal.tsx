@@ -98,7 +98,7 @@ const SignInModal = () => {
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="+1 (555) 000-0000"
+                  placeholder="+91 98765 43210"
                   className="pl-10"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}

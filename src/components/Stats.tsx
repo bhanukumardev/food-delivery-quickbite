@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { TrendingUp, Users, Star, Clock } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "50k+", label: "Happy Customers", color: "text-primary" },
+  { icon: Users, value: "2 Lakh+", label: "Satisfied Customers", color: "text-primary" },
   { icon: Star, value: "4.8/5", label: "Average Rating", color: "text-accent" },
-  { icon: TrendingUp, value: "500+", label: "Partner Restaurants", color: "text-secondary" },
+  { icon: TrendingUp, value: "5,000+", label: "Indian Partner Restaurants", color: "text-secondary" },
   { icon: Clock, value: "30min", label: "Avg Delivery Time", color: "text-primary" },
 ];
 

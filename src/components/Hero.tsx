@@ -89,8 +89,8 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0"
             >
-              Experience the joy of lightning-fast food delivery. Your favorite
-              meals, delivered hot and fresh in minutes.
+              Experience the joy of lightning-fast food delivery across India. Your favorite
+              desi meals, delivered hot and fresh in minutes.
             </motion.p>
 
             <motion.div

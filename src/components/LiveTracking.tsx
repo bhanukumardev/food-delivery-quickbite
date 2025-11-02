@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Navigation, Package, CheckCircle2 } from "lucide-react";
 import mapIllustration from "@/assets/map-illustration.png";
+import { useApp } from "@/contexts/AppContext";
 
 const trackingSteps = [
   { icon: Package, label: "Order Confirmed", status: "completed" },
@@ -11,6 +12,7 @@ const trackingSteps = [
 ];
 
 const LiveTracking = () => {
+  const { handleOrderNow } = useApp();
   return (
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -134,7 +136,7 @@ const LiveTracking = () => {
               })}
             </div>
 
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="lg" onClick={() => handleOrderNow()}>
               Try Live Demo
             </Button>
           </motion.div>

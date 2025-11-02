@@ -6,7 +6,7 @@
 
 ![QuickBite](https://img.shields.io/badge/QuickBite-Fast_Delivery-orange?style=for-the-badge)
 
-**GitHub Repository**: https://github.com/bhanukumardev/quickbite-motion-delight
+**GitHub Repository**: https://github.com/bhanukumardev/food-delivery-quickbite
 
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript)
@@ -14,7 +14,7 @@
 
 **🚀 30-Minute Promise | 📱 PWA Enabled | 🎨 Beautiful Animations**
 
-[Live Demo](https://quickbite-motion-delight.vercel.app/) • [Report Bug](https://github.com/bhanukumardev/quickbite-motion-delight/issues) • [Request Feature](https://github.com/bhanukumardev/quickbite-motion-delight/issues)
+[Live Demo](https://food-delivery-quickbite.vercel.app/) • [Report Bug](https://github.com/bhanukumardev/food-delivery-quickbite/issues) • [Request Feature](https://github.com/bhanukumardev/food-delivery-quickbite/issues)
 
 </div>
 
@@ -35,7 +35,7 @@
 
 ## 🎯 About
 
-**QuickBite** is a modern, fully responsive food delivery web application that connects users with their favorite local restaurants. With real-time order tracking, a 30-minute delivery promise, and stunning animations powered by Framer Motion, QuickBite delivers an exceptional user experience on both desktop and mobile devices.
+**QuickBite** is a modern, fully responsive food delivery web application that connects users with their favorite Indian restaurants across the country. With real-time order tracking, a 30-minute delivery promise, and stunning animations powered by Framer Motion, QuickBite delivers an exceptional user experience on both desktop and mobile devices.
 
 ### ✨ Highlights
 
@@ -45,18 +45,20 @@
 - • 🔄 **Real-time Tracking**: Monitor your order from restaurant to doorstep
 - • 🌙 **Dark Mode**: Seamless theme switching
 - • ♿ **Accessible**: WCAG compliant design
+- • 🇮🇳 **India-Focused**: Serving India's favorite meals since 2022
 
 ## 🚀 Features
 
 ### Core Features
 
-- • ✅ Browse 500+ local restaurants
+- • ✅ Browse 5,000+ Indian restaurants across major cities
 - • ✅ Real-time order tracking with live map
 - • ✅ 30-minute delivery guarantee
-- • ✅ Multiple payment options
+- • ✅ Multiple payment options (UPI, Cards, Wallets)
 - • ✅ Customer reviews and ratings (4.8★ average)
-- • ✅ Special offers and discounts
+- • ✅ Special offers and discounts (Use DESI50 for 50% off)
 - • ✅ Partner restaurant dashboard
+- • ✅ Indian cuisines: North Indian, South Indian, Bengali, Street Food & more
 
 ### Technical Features
 
@@ -110,10 +112,10 @@ Before you begin, ensure you have the following installed:
 
 ```sh
 # Clone the repository
-git clone https://github.com/bhanukumardev/quickbite-motion-delight.git
+git clone https://github.com/bhanukumardev/food-delivery-quickbite.git
 
 # Navigate to project directory
-cd quickbite-motion-delight
+cd food-delivery-quickbite
 
 # Install dependencies
 npm install
@@ -131,8 +133,8 @@ The application will be available at `http://localhost:5173`
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/bhanukumardev/quickbite-motion-delight.git
-   cd quickbite-motion-delight
+   git clone https://github.com/bhanukumardev/food-delivery-quickbite.git
+   cd food-delivery-quickbite
    ```
 
 2. **Install Dependencies**
@@ -190,7 +192,7 @@ npm run lint
 ### Project Structure
 
 ```
-quickbite-motion-delight/
+food-delivery-quickbite/
 ├── public/              # Static assets
 ├── src/
 │   ├── assets/          # Images, icons, etc.
@@ -218,14 +220,14 @@ QuickBite can be installed as a Progressive Web App on any device:
 
 ### On Mobile (iOS/Android)
 
-1. Open [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/) in your browser
+1. Open [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/) in your browser
 2. Tap the browser menu (⋮ or share icon)
 3. Select "Add to Home Screen" or "Install App"
 4. Confirm installation
 
 ### On Desktop (Chrome/Edge)
 
-1. Visit [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/)
+1. Visit [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/)
 2. Look for the install icon (⊕) in the address bar
 3. Click "Install" when prompted
 4. The app will open in its own window
@@ -264,7 +266,7 @@ QuickBite can be installed as a Progressive Web App on any device:
 
 3. **Current Deployment**
 
-   - Live URL: [https://quickbite-motion-delight.vercel.app/](https://quickbite-motion-delight.vercel.app/)
+   - Live URL: [https://food-delivery-quickbite.vercel.app/](https://food-delivery-quickbite.vercel.app/)
    - Auto-deploys on push to `main` branch
 
 ### Deploy to Other Platforms
@@ -276,25 +278,23 @@ QuickBite can be installed as a Progressive Web App on any device:
 # Install Netlify CLI
 npm install -g netlify-cli
 
-# Build and deploy
+# Build the project
 npm run build
-netlify deploy --prod
-```
 
+# Deploy
+netlify deploy --prod --dir=dist
+```
 </details>
 
 <details>
 <summary>GitHub Pages</summary>
 
-```sh
-# Build the project
-npm run build
-
-# Deploy to gh-pages branch
-npm install -g gh-pages
-gh-pages -d dist
-```
-
+1. Add to `vite.config.ts`:
+   ```ts
+   base: '/food-delivery-quickbite/'
+   ```
+2. Build: `npm run build`
+3. Deploy the `dist` folder to `gh-pages` branch
 </details>
 
 ## 🤝 Contributing
@@ -326,7 +326,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Bhanu Kumar**
 
 - • GitHub: [@bhanukumardev](https://github.com/bhanukumardev)
-- • Project Link: [QuickBite Motion Delight](https://github.com/bhanukumardev/quickbite-motion-delight)
+- • Project Link: [QuickBite Food Delivery](https://github.com/bhanukumardev/food-delivery-quickbite)
 
 ## 🙏 Acknowledgments
 
@@ -339,10 +339,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-- • **500+** Partner Restaurants
-- • **50k+** Happy Users
+- • **5,000+** Indian Partner Restaurants
+- • **2 Lakh+** Satisfied Customers
 - • **4.8★** Average Rating
 - • **98%** On-time Delivery Rate
+- • **Serving** Major cities across India
 
 ---
 

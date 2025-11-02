@@ -3,30 +3,30 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Food Enthusiast",
-    comment: "QuickBite has changed how I order food! Super fast delivery and the tracking feature is amazing.",
+    name: "Ritu Sharma",
+    role: "Foodie, Mumbai",
+    comment: "QuickBite delivers piping hot dosas right to my desk! Real-time tracking is superb.",
     rating: 5,
     avatar: "https://i.pravatar.cc/150?img=1",
   },
   {
-    name: "Michael Chen",
-    role: "Busy Professional",
-    comment: "30-minute delivery is not just a promise—it's reality! Never disappointed with QuickBite.",
+    name: "Amit Kumar",
+    role: "Software Engineer, Bangalore",
+    comment: "30-minute biryani delivery is a lifesaver during lunch break! Never disappointed with QuickBite.",
     rating: 5,
     avatar: "https://i.pravatar.cc/150?img=12",
   },
   {
-    name: "Emma Davis",
-    role: "Student",
-    comment: "Love the variety of restaurants! The app is so easy to use and food always arrives hot.",
+    name: "Priya Singh",
+    role: "College Student, Delhi",
+    comment: "Love ordering chaat and pizzas for impromptu hostel parties. Food always arrives hot and fresh!",
     rating: 5,
     avatar: "https://i.pravatar.cc/150?img=5",
   },
   {
-    name: "James Wilson",
-    role: "Family Dad",
-    comment: "Perfect for family dinners. Safe packaging and contactless delivery give me peace of mind.",
+    name: "Rakesh Verma",
+    role: "Family Man, Patna",
+    comment: "Safe packaging makes ordering food for my kids worry-free. Perfect for family dinners!",
     rating: 5,
     avatar: "https://i.pravatar.cc/150?img=8",
   },
@@ -47,7 +47,7 @@ const Testimonials = () => {
             What Our <span className="text-primary font-extrabold">Customers</span> Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of happy customers enjoying fast, reliable delivery
+            Join lakhs of satisfied customers enjoying fast, reliable delivery across India
           </p>
         </motion.div>
 
@@ -118,7 +118,7 @@ const Testimonials = () => {
               </div>
             </div>
             <p className="text-muted-foreground">
-              Based on <span className="font-semibold">50,000+</span> reviews
+              Based on <span className="font-semibold">2 Lakh+</span> reviews
             </p>
           </div>
         </motion.div>
