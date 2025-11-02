@@ -22,7 +22,7 @@ There are several ways of editing your application.
 
 [Live Demo](https://quickbite-motion-delight.vercel.app/) • [Report Bug](https://github.com/bhanukumardev/quickbite-motion-delight/issues) • [Request Feature](https://github.com/bhanukumardev/quickbite-motion-delight/issues)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/37e5211c-f505-4cdc-a429-4935b01516ce) and start prompting.
+Simply visit the [Food Delivery Project](https://quickbite-motion-delight.vercel.app/) and start prompting.
 
 </div>
 
