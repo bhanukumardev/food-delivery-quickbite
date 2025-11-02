@@ -74,7 +74,7 @@ const Hero = () => {
               🚀 30-Minute Promise
             </motion.div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
               <span className="text-foreground">Food Delivered</span>{" "}
               <motion.span
                 className="relative inline-block"
@@ -96,7 +96,7 @@ const Hero = () => {
               </motion.span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
               Connect with your favorite local restaurants. Fresh food, fast
               delivery, and real-time tracking—all in one place.
             </p>
@@ -131,18 +131,18 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-8 justify-center lg:justify-start pt-8">
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Restaurants</div>
+            <div className="flex flex-wrap gap-6 sm:gap-8 justify-center lg:justify-start pt-8">
+              <div className="text-center lg:text-left min-w-[80px]">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">500+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Restaurants</div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-primary">50k+</div>
-                <div className="text-sm text-muted-foreground">Happy Users</div>
+              <div className="text-center lg:text-left min-w-[80px]">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">50k+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Happy Users</div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-primary">4.8★</div>
-                <div className="text-sm text-muted-foreground">Rating</div>
+              <div className="text-center lg:text-left min-w-[80px]">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">4.8★</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Rating</div>
               </div>
             </div>
           </motion.div>

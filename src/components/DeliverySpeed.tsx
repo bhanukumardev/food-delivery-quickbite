@@ -46,7 +46,7 @@ const DeliverySpeed = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Speed Meets <span className="text-secondary font-extrabold">Safety</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
