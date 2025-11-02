@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-accent/10 to-primary/20 pt-20 md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden overflow-x-hidden bg-gradient-to-br from-background via-accent/10 to-primary/20 pt-20 md:pt-0">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -35,128 +35,93 @@ const Hero = () => {
             x: [0, -20, 0],
           }}
           transition={{
-            duration: 7,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute top-1/2 left-1/4 w-24 h-24 bg-secondary/15 rounded-full blur-2xl"
-          animate={{
-            y: [0, 50, 0],
-            scale: [1, 1.4, 1],
-          }}
-          transition={{
-            duration: 8,
+            duration: 5,
             repeat: Infinity,
             ease: "easeInOut",
           }}
         />
       </div>
 
+      {/* Food Particles */}
       <FoodParticles />
-      
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
+
+      {/* Hero Content */}
+      <div className="container mx-auto p-4 sm:p-6 md:p-8 py-20 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center lg:text-left space-y-6"
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center md:text-left space-y-6"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-2 bg-primary/10 backdrop-blur-sm rounded-full text-primary font-semibold text-sm md:text-base border border-primary/20"
+              transition={{ duration: 0.6, delay: 0.3 }}
             >
-              🚀 30-Minute Promise
+              <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+                🚀 Fast & Fresh Delivery
+              </span>
             </motion.div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-              <span className="text-foreground">Food Delivered</span>{" "}
-              <motion.span
-                className="relative inline-block"
-              >
-                <span className="relative z-10 text-foreground font-extrabold">
-                  Lightning Fast
-                </span>
-                <motion.span
-                  className="absolute inset-0 gradient-food rounded-lg blur-xl opacity-50"
-                  animate={{
-                    opacity: [0.3, 0.6, 0.3],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                />
-              </motion.span>
-            </h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+            >
+              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+                QuickBite
+              </span>
+              <br />
+              Delivered Fast
+            </motion.h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-              Connect with your favorite local restaurants. Fresh food, fast
-              delivery, and real-time tracking—all in one place.
-            </p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0"
+            >
+              Experience the joy of lightning-fast food delivery. Your favorite
+              meals, delivered hot and fresh in minutes.
+            </motion.p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+            >
               <Button
-                variant="hero"
-                size="xl"
-                onClick={() => scrollToSection("restaurants")}
-                className="group"
+                size="lg"
+                className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => scrollToSection("menu")}
               >
                 Order Now
-                <motion.span
-                  className="inline-block"
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  →
-                </motion.span>
               </Button>
               <Button
-                variant="hero-outline"
-                size="xl"
-                onClick={() => scrollToSection("how-it-works")}
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => scrollToSection("about")}
               >
                 Learn More
               </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="flex flex-wrap gap-6 sm:gap-8 justify-center lg:justify-start pt-8">
-              <div className="text-center lg:text-left min-w-[80px]">
-                <div className="text-2xl sm:text-3xl font-bold text-primary">500+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Restaurants</div>
-              </div>
-              <div className="text-center lg:text-left min-w-[80px]">
-                <div className="text-2xl sm:text-3xl font-bold text-primary">50k+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Happy Users</div>
-              </div>
-              <div className="text-center lg:text-left min-w-[80px]">
-                <div className="text-2xl sm:text-3xl font-bold text-primary">4.8★</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Rating</div>
-              </div>
-            </div>
+            </motion.div>
           </motion.div>
 
-          {/* Visual Content */}
+          {/* Right Content - Animated Images */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative hidden md:block"
           >
             <motion.img
               src={deliveryBike}
-              alt="QuickBite Delivery"
+              alt="Delivery Bike"
               className="w-full max-w-lg mx-auto drop-shadow-2xl"
               animate={{
                 y: [0, -20, 0],
@@ -167,7 +132,6 @@ const Hero = () => {
                 ease: "easeInOut",
               }}
             />
-
             <motion.img
               src={foodItems}
               alt="Delicious Food"
