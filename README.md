@@ -6,7 +6,7 @@
 
 ![QuickBite](https://img.shields.io/badge/QuickBite-Fast_Delivery-orange?style=for-the-badge)
 
-**GitHub Repository**: https://github.com/bhanukumardev/quickbite-motion-delight
+**GitHub Repository**: https://github.com/bhanukumardev/food-delivery-quickbite
 
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript)
