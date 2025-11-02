@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import deliveryBike from "@/assets/delivery-bike.png";
 import foodItems from "@/assets/food-items.png";
+import FoodParticles from "./FoodParticles";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -10,35 +11,51 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-accent/10 to-primary/20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-accent/10 to-primary/20 pt-20 md:pt-0">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl"
+          className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl"
           animate={{
             y: [0, 30, 0],
             scale: [1, 1.2, 1],
+            x: [0, 20, 0],
           }}
           transition={{
-            duration: 4,
+            duration: 6,
             repeat: Infinity,
             ease: "easeInOut",
           }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-2xl"
+          className="absolute bottom-20 right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl"
           animate={{
             y: [0, -40, 0],
             scale: [1, 1.3, 1],
+            x: [0, -20, 0],
           }}
           transition={{
-            duration: 5,
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/4 w-24 h-24 bg-secondary/15 rounded-full blur-2xl"
+          animate={{
+            y: [0, 50, 0],
+            scale: [1, 1.4, 1],
+          }}
+          transition={{
+            duration: 8,
             repeat: Infinity,
             ease: "easeInOut",
           }}
         />
       </div>
 
+      <FoodParticles />
+      
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -52,16 +69,26 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-semibold text-sm"
+              className="inline-block px-4 py-2 bg-primary/10 backdrop-blur-sm rounded-full text-primary font-semibold text-sm md:text-base border border-primary/20"
             >
               🚀 30-Minute Promise
             </motion.div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Food Delivered{" "}
-              <span className="gradient-food bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="text-foreground">Food Delivered</span>{" "}
+              <motion.span
+                className="gradient-food bg-clip-text text-transparent inline-block"
+                animate={{
+                  backgroundPosition: ["0%", "100%", "0%"],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              >
                 Lightning Fast
-              </span>
+              </motion.span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
