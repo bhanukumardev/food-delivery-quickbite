@@ -29,7 +29,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="mb-4"
             >
-              <h3 className="text-2xl font-bold gradient-food bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold text-primary">
                 QuickBite
               </h3>
             </motion.div>

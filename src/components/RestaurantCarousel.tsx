@@ -59,7 +59,7 @@ const RestaurantCarousel = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="gradient-food bg-clip-text text-transparent">Restaurants</span>
+            Featured <span className="text-primary font-extrabold">Restaurants</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover amazing local restaurants ready to deliver

@@ -22,7 +22,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
           >
             <img src={logo} alt="QuickBite Logo" className="h-10 w-10 md:h-12 md:w-12" />
-            <span className="text-xl md:text-2xl font-bold gradient-food bg-clip-text text-transparent">
+            <span className="text-xl md:text-2xl font-bold text-primary">
               QuickBite
             </span>
           </motion.div>

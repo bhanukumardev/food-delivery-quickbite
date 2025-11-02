@@ -77,17 +77,22 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="text-foreground">Food Delivered</span>{" "}
               <motion.span
-                className="gradient-food bg-clip-text text-transparent inline-block"
-                animate={{
-                  backgroundPosition: ["0%", "100%", "0%"],
-                }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
+                className="relative inline-block"
               >
-                Lightning Fast
+                <span className="relative z-10 text-foreground font-extrabold">
+                  Lightning Fast
+                </span>
+                <motion.span
+                  className="absolute inset-0 gradient-food rounded-lg blur-xl opacity-50"
+                  animate={{
+                    opacity: [0.3, 0.6, 0.3],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
               </motion.span>
             </h1>
 

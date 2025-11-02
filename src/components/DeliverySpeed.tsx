@@ -47,7 +47,7 @@ const DeliverySpeed = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Speed Meets <span className="gradient-fresh bg-clip-text text-transparent">Safety</span>
+            Speed Meets <span className="text-secondary font-extrabold">Safety</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We don't just deliver fast—we deliver with care
@@ -91,7 +91,7 @@ const DeliverySpeed = () => {
 
                   {/* Stat */}
                   <motion.div
-                    className="text-4xl font-bold mb-3 gradient-food bg-clip-text text-transparent"
+                    className="text-4xl font-bold mb-3 text-primary"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
@@ -120,7 +120,7 @@ const DeliverySpeed = () => {
           <div className="inline-block bg-gradient-to-r from-primary via-accent to-secondary p-1 rounded-full">
             <div className="bg-card px-8 py-4 rounded-full">
               <p className="text-lg font-semibold">
-                🏆 Our <span className="gradient-food bg-clip-text text-transparent">30-Minute Promise</span> Guarantee
+                🏆 Our <span className="text-primary font-bold">30-Minute Promise</span> Guarantee
               </p>
             </div>
           </div>

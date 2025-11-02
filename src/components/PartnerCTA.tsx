@@ -15,7 +15,7 @@ const PartnerCTA = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Join The{" "}
-            <span className="gradient-food bg-clip-text text-transparent">
+            <span className="text-primary font-extrabold">
               QuickBite
             </span>{" "}
             Family

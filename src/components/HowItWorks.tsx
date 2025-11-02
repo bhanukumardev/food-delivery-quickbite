@@ -34,7 +34,7 @@ const HowItWorks = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            How It <span className="gradient-food bg-clip-text text-transparent">Works</span>
+            How It <span className="text-primary font-extrabold">Works</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Get your favorite food delivered in three simple steps

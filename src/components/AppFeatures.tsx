@@ -38,7 +38,7 @@ const AppFeatures = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Order From <span className="gradient-food bg-clip-text text-transparent">Anywhere</span>
+              Order From <span className="text-primary font-extrabold">Anywhere</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Download the QuickBite app for the ultimate food delivery experience

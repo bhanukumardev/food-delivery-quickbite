@@ -60,7 +60,7 @@ const LiveTracking = () => {
                 }}
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold gradient-food bg-clip-text text-transparent">
+                  <div className="text-2xl font-bold text-primary">
                     12 mins
                   </div>
                   <div className="text-sm text-muted-foreground">Estimated</div>
@@ -79,7 +79,7 @@ const LiveTracking = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Track Every{" "}
-              <span className="gradient-food bg-clip-text text-transparent">
+              <span className="text-primary font-extrabold">
                 Step
               </span>
             </h2>

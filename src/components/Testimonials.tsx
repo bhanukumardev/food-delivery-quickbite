@@ -44,7 +44,7 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            What Our <span className="gradient-food bg-clip-text text-transparent">Customers</span> Say
+            What Our <span className="text-primary font-extrabold">Customers</span> Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Join thousands of happy customers enjoying fast, reliable delivery
@@ -105,7 +105,7 @@ const Testimonials = () => {
         >
           <div className="inline-block bg-card shadow-glow rounded-2xl px-8 py-6">
             <div className="flex items-center gap-3 justify-center mb-2">
-              <span className="text-5xl font-bold gradient-food bg-clip-text text-transparent">
+              <span className="text-5xl font-bold text-primary">
                 4.8
               </span>
               <div className="flex">
