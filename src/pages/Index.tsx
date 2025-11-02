@@ -17,13 +17,21 @@ const Index = () => {
       <Header />
       <Hero />
       <Stats />
-      <HowItWorks />
-      <RestaurantCarousel />
+      <div id="how-it-works">
+        <HowItWorks />
+      </div>
+      <div id="restaurants">
+        <RestaurantCarousel />
+      </div>
       <OfferBanner />
       <DeliverySpeed />
-      <AppFeatures />
+      <div id="features">
+        <AppFeatures />
+      </div>
       <Testimonials />
-      <LiveTracking />
+      <div id="tracking">
+        <LiveTracking />
+      </div>
       <PartnerCTA />
       <Footer />
     </div>

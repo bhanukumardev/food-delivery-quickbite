@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Store, Bike, ArrowRight } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 
 const PartnerCTA = () => {
+  const { openPartnerModal, openDriverModal } = useApp();
+
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-12 md:py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,6 +76,7 @@ const PartnerCTA = () => {
                   variant="default"
                   size="lg"
                   className="w-full group/btn"
+                  onClick={openPartnerModal}
                 >
                   Become a Partner
                   <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -126,6 +130,7 @@ const PartnerCTA = () => {
                   variant="default"
                   size="lg"
                   className="w-full group/btn"
+                  onClick={openDriverModal}
                 >
                   Join as Driver
                   <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Star, Clock } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 
 const restaurants = [
   {
@@ -48,8 +49,10 @@ const restaurants = [
 ];
 
 const RestaurantCarousel = () => {
+  const { handleOrderNow } = useApp();
+
   return (
-    <section id="restaurants" className="py-20 bg-background">
+    <section id="restaurants" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -101,7 +104,11 @@ const RestaurantCarousel = () => {
                       <Clock className="w-4 h-4" />
                       {restaurant.deliveryTime}
                     </div>
-                    <Button size="sm" variant="default">
+                    <Button
+                      size="sm"
+                      variant="default"
+                      onClick={() => handleOrderNow(restaurant.name)}
+                    >
                       Order Now
                     </Button>
                   </div>
@@ -118,7 +125,11 @@ const RestaurantCarousel = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <Button variant="hero" size="lg">
+          <Button
+            variant="hero"
+            size="lg"
+            onClick={() => handleOrderNow()}
+          >
             View All Restaurants
           </Button>
         </motion.div>

@@ -2,10 +2,20 @@ import { motion } from "framer-motion";
 import { Menu, X, MapPin, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useApp } from "@/contexts/AppContext";
 import logo from "@/assets/quickbite-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openLocationModal, openSignInModal, handleOrderNow, userLocation } = useApp();
+
+  const scrollToSection = (sectionId: string) => {
+    setIsMenuOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -22,7 +32,7 @@ const Header = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-md"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -31,6 +41,7 @@ const Header = () => {
             className="flex items-center gap-2 cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <img src={logo} alt="QuickBite Logo" className="h-10 w-10 md:h-12 md:w-12" />
             <span className="text-xl md:text-2xl font-bold text-primary">
@@ -40,45 +51,60 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#restaurants"
+            <button
+              onClick={() => scrollToSection("restaurants")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Restaurants
-            </a>
-            <a
-              href="#how-it-works"
+            </button>
+            <button
+              onClick={() => scrollToSection("how-it-works")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               How It Works
-            </a>
-            <a
-              href="#features"
+            </button>
+            <button
+              onClick={() => scrollToSection("features")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Features
-            </a>
-            <a
-              href="#tracking"
+            </button>
+            <button
+              onClick={() => scrollToSection("tracking")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Tracking
-            </a>
-
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="sm" className="gap-2">
-                <MapPin className="w-4 h-4" />
-                Location
-              </Button>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <User className="w-4 h-4" />
-                Sign In
-              </Button>
-              <Button variant="hero" size="default">
-                Order Now
-              </Button>
-            </div>
+            </button>
           </nav>
+
+          {/* Desktop Actions */}
+          <div className="hidden md:flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="gap-2"
+              onClick={openLocationModal}
+            >
+              <MapPin className="w-4 h-4" />
+              {userLocation.length > 20 ? `${userLocation.substring(0, 20)}...` : userLocation}
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="gap-2"
+              onClick={openSignInModal}
+            >
+              <User className="w-4 h-4" />
+              Sign In
+            </Button>
+            <Button
+              variant="hero"
+              size="default"
+              onClick={() => handleOrderNow()}
+            >
+              Order Now
+            </Button>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -105,45 +131,65 @@ const Header = () => {
           style={{ top: '64px' }}
         >
           <nav className="flex flex-col gap-4 p-6">
-            <a
-              href="#restaurants"
-              className="text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
+            <button
+              className="text-foreground hover:text-primary transition-colors font-medium py-2 text-left"
+              onClick={() => scrollToSection("restaurants")}
             >
               Restaurants
-            </a>
-            <a
-              href="#how-it-works"
-              className="text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
+            </button>
+            <button
+              className="text-foreground hover:text-primary transition-colors font-medium py-2 text-left"
+              onClick={() => scrollToSection("how-it-works")}
             >
               How It Works
-            </a>
-            <a
-              href="#features"
-              className="text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
+            </button>
+            <button
+              className="text-foreground hover:text-primary transition-colors font-medium py-2 text-left"
+              onClick={() => scrollToSection("features")}
             >
               Features
-            </a>
-            <a
-              href="#tracking"
-              className="text-foreground hover:text-primary transition-colors font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
+            </button>
+            <button
+              className="text-foreground hover:text-primary transition-colors font-medium py-2 text-left"
+              onClick={() => scrollToSection("tracking")}
             >
               Tracking
-            </a>
+            </button>
 
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
-              <Button variant="ghost" size="sm" className="gap-2 justify-start">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="gap-2 justify-start"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  openLocationModal();
+                }}
+              >
                 <MapPin className="w-4 h-4" />
-                Location
+                {userLocation}
               </Button>
-              <Button variant="ghost" size="sm" className="gap-2 justify-start">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="gap-2 justify-start"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  openSignInModal();
+                }}
+              >
                 <User className="w-4 h-4" />
                 Sign In
               </Button>
-              <Button variant="hero" size="default" className="w-full">
+              <Button
+                variant="hero"
+                size="default"
+                className="w-full"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  handleOrderNow();
+                }}
+              >
                 Order Now
               </Button>
             </div>

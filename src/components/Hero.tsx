@@ -1,17 +1,22 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 import deliveryBike from "@/assets/delivery-bike.png";
 import foodItems from "@/assets/food-items.png";
 import FoodParticles from "./FoodParticles";
 
 const Hero = () => {
+  const { handleOrderNow } = useApp();
+
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden overflow-x-hidden bg-gradient-to-br from-background via-accent/10 to-primary/20 pt-20 md:pt-0">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden overflow-x-hidden bg-gradient-to-br from-background via-accent/10 to-primary/20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -45,8 +50,8 @@ const Hero = () => {
       {/* Food Particles */}
       <FoodParticles />
 
-      {/* Hero Content */}
-      <div className="container mx-auto p-4 sm:p-6 md:p-8 py-20 relative z-10">
+  {/* Hero Content */}
+  <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10 h-full flex items-center pt-16 md:pt-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -97,7 +102,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                onClick={() => scrollToSection("menu")}
+                onClick={() => handleOrderNow()}
               >
                 Order Now
               </Button>
@@ -105,7 +110,7 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                onClick={() => scrollToSection("about")}
+                onClick={() => scrollToSection("how-it-works")}
               >
                 Learn More
               </Button>
@@ -148,21 +153,6 @@ const Hero = () => {
             />
           </motion.div>
         </div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          animate={{
-            y: [0, 10, 0],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          <ChevronDown className="w-8 h-8 text-primary" />
-        </motion.div>
       </div>
     </section>
   );
